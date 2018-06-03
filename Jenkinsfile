@@ -12,6 +12,11 @@ pipeline {
                 echo 'Testing..'
             }
         }
+        stage('cheif check') {
+            steps {
+                input "领导确认是否可以发布?"
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
