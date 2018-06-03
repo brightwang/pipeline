@@ -14,7 +14,7 @@ pipeline {
         }
         stage('cheif check') {
             steps {
-                input "领导确认是否可以发布?"
+                input message: '是否确定发布到生产环境？', submitter: 'demo'
             }
         }
         stage('Deploy') {
