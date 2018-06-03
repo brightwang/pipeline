@@ -20,7 +20,7 @@ pipeline {
     }
     post {
         always {
-            junit '**/target/*.xml'
+            echo 'end'
         }
         failure {
             echo 'failure'
