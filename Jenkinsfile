@@ -23,7 +23,7 @@ pipeline {
             junit '**/target/*.xml'
         }
         failure {
-            echo 'error'
+            echo 'failure'
         }
     }
 }
